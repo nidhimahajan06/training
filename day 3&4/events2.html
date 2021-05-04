@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body  onload="checkCookies()">
+    <p id="cookies"></p>
+     Name: <input type="text" onfocus="myFunction(this)"><br><br>
+     <input onchange="alert(this.value)" type="number"><br><br>
+     <input onblur="alert(this.value)">
+    <script>
+        function checkCookies() {
+  var text = "";
+  if (navigator.cookieEnabled == true) {
+    text = "Cookies are enabled.";
+  } else {
+    text = "Cookies are not enabled.";
+  }
+  document.getElementById("cookies").innerHTML = text;
+}
+    function myFunction(x) {
+        x.style.background = "#cca4a4";
+    }
+    </script>
+
+</body>
+</html>
