@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fadeIn and fadeOut jQuery</title>
+</head>
+
+<body>
+    <center>
+        <p id="trees">Trees are significant in our life. Life will turn out to be extremely troublesome without trees.
+            We can say that
+            life would be done because a tree is the most significant angle giving a solid and well off life.
+            These days individuals are eagerly chopping down trees; on the off chance that it proceeds, at that point,
+            one
+            day will come when will have no trees left with us. Trees give us oxygen, which is required for our breath.
+            Indeed, trees can stop soil disintegration. Consequently, we should comprehend the significance of trees,
+            and we
+            should plant a tree at whatever point we are chopping down a solitary one.</p>
+
+        <button id="out">FadeOut</button>
+        <button id="in">FadeIn</button>
+    </center>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    //fade in and out
+    $('#in').click(function () {
+        $('#trees').fadeIn(1000);
+    });
+    $('#out').click(function () {
+        $('#trees').fadeOut(1000);
+    });
+    $('#trees').slideToggle(1000, function(){
+    console.log('slider');
+ });
+
+</script>
+
+</body>
+
+</html>
